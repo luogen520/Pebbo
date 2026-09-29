@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FBF6E9</color>
+    <color name="bg_dark">#1A1F1D</color>
+    <color name="surface">#FBF6E9</color>
+    <color name="surface_dark">#232725</color>
+    <color name="on_surface">#1B2A24</color>
+    <color name="on_surface_dark">#E8DFC6</color>
+    <color name="on_surface_variant">#5F6B66</color>
+    <color name="on_surface_variant_dark">#B5AC95</color>
+    <color name="primary">#1B5E4F</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#A4D8C6</color>
+    <color name="on_primary_container">#002017</color>
+    <color name="primary_dark">#7FD1B5</color>
+    <color name="on_primary_dark">#00382A</color>
+    <color name="primary_container_dark">#00513C</color>
+    <color name="on_primary_container_dark">#A4D8C6</color>
+    <color name="secondary">#4B635B</color>
+    <color name="secondary_container">#CDE8DC</color>
+    <color name="on_secondary_container">#06201A</color>
+    <color name="secondary_dark">#B1CCBF</color>
+    <color name="secondary_container_dark">#324A42</color>
+    <color name="on_secondary_container_dark">#CDE8DC</color>
+    <color name="accent">#A14B2A</color>
+    <color name="on_accent">#FFFFFF</color>
+    <color name="accent_dark">#F2B68F</color>
+    <color name="outline">#727975</color>
+    <color name="outline_dark">#8B938E</color>
+</resources>
