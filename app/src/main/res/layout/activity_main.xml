@@ -1,12 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:background="?android:colorBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/preview"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Pebbo"
-        android:textSize="32sp" />
-</LinearLayout>
+        android:layout_marginHorizontal="20dp"
+        android:gravity="end"
+        android:textSize="20sp"
+        android:textColor="?colorOnSurfaceVariant"
+        android:fontFamily="sans-serif-light"
+        android:alpha="0.75"
+        android:maxLines="1"
+        android:ellipsize="start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/display"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="12 + 5" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="end"
+        android:textSize="60sp"
+        android:textColor="?colorOnSurface"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="1"
+        android:ellipsize="start"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="30sp"
+        app:autoSizeMaxTextSize="60sp"
+        app:layout_constraintTop_toBottomOf="@id/preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/keypad"
+        tools:text="17" />
+
+    <LinearLayout
+        android:id="@+id/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display">
+
+        <LinearLayout style="@style/Row">
+            <Button android:id="@+id/b_clr" style="@style/BtnFn" android:text="C" />
+            <Button android:id="@+id/b_del" style="@style/BtnFn" android:text="⌫" />
+            <Button android:id="@+id/b_pct" style="@style/BtnFn" android:text="%" />
+            <Button android:id="@+id/b_div" style="@style/BtnOp" android:text="÷" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Row">
+            <Button android:id="@+id/b7" style="@style/BtnNum" android:text="7" />
+            <Button android:id="@+id/b8" style="@style/BtnNum" android:text="8" />
+            <Button android:id="@+id/b9" style="@style/BtnNum" android:text="9" />
+            <Button android:id="@+id/b_mul" style="@style/BtnOp" android:text="×" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Row">
+            <Button android:id="@+id/b4" style="@style/BtnNum" android:text="4" />
+            <Button android:id="@+id/b5" style="@style/BtnNum" android:text="5" />
+            <Button android:id="@+id/b6" style="@style/BtnNum" android:text="6" />
+            <Button android:id="@+id/b_sub" style="@style/BtnOp" android:text="−" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Row">
+            <Button android:id="@+id/b1" style="@style/BtnNum" android:text="1" />
+            <Button android:id="@+id/b2" style="@style/BtnNum" android:text="2" />
+            <Button android:id="@+id/b3" style="@style/BtnNum" android:text="3" />
+            <Button android:id="@+id/b_add" style="@style/BtnOp" android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Row">
+            <Button android:id="@+id/b_neg" style="@style/BtnFn" android:text="±" />
+            <Button android:id="@+id/b0" style="@style/BtnNum" android:text="0" />
+            <Button android:id="@+id/b_dot" style="@style/BtnNum" android:text="." />
+            <Button android:id="@+id/b_eq" style="@style/BtnEq" android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
