@@ -16,4 +16,46 @@
         <item name="android:statusBarColor">@color/bg</item>
         <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
     </style>
+
+    <style name="Row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Btn" parent="Widget.Material3.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="cornerRadius">18dp</item>
+    </style>
+
+    <style name="BtnNum" parent="Btn">
+        <item name="backgroundTint">@color/primary_container</item>
+        <item name="android:textColor">@color/on_primary_container</item>
+    </style>
+
+    <style name="BtnOp" parent="Btn">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/on_primary</item>
+    </style>
+
+    <style name="BtnFn" parent="Btn">
+        <item name="backgroundTint">@color/secondary_container</item>
+        <item name="android:textColor">@color/on_secondary_container</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="BtnEq" parent="Btn">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="android:textColor">@color/on_accent</item>
+    </style>
 </resources>

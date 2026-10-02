@@ -16,4 +16,25 @@
         <item name="android:statusBarColor">@color/bg_dark</item>
         <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
     </style>
+
+    <style name="BtnNum" parent="Btn">
+        <item name="backgroundTint">@color/primary_container_dark</item>
+        <item name="android:textColor">@color/on_primary_container_dark</item>
+    </style>
+
+    <style name="BtnOp" parent="Btn">
+        <item name="backgroundTint">@color/primary_dark</item>
+        <item name="android:textColor">@color/on_primary_dark</item>
+    </style>
+
+    <style name="BtnFn" parent="Btn">
+        <item name="backgroundTint">@color/secondary_container_dark</item>
+        <item name="android:textColor">@color/on_secondary_container_dark</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="BtnEq" parent="Btn">
+        <item name="backgroundTint">@color/accent_dark</item>
+        <item name="android:textColor">@color/on_accent</item>
+    </style>
 </resources>
