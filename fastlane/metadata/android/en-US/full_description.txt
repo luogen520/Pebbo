@@ -1,0 +1,10 @@
+Pebbo is the calculator I wanted on my phone: nothing extra, just the keys I press and a number on screen.
+
+It does the usual four operations plus percent, sign toggle and a backspace key for the inevitable typos. Hit C to start over.
+
+The keypad is large enough to find by feel. The display grows to whatever fits. There's a light and a dark theme, picked automatically from your system setting.
+
+Things it doesn't do: connect to the internet, show ads, collect anything, sync to a cloud, ask for an account. The whole app is one screen and about a megabyte of code.
+
+Source: https://github.com/luogen520/Pebbo
+License: GPL-3.0-or-later
