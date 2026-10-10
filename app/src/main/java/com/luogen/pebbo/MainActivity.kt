@@ -133,11 +133,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun doDel() {
         if (fresh) return
-        if (displayStr.length <= 1 || (displayStr.length == 2 && displayStr.startsWith("-"))) {
+        if (displayStr.length <= 1) {
+            displayStr = "0"
+            fresh = true
+        } else if (displayStr.length == 2 && displayStr.startsWith("-")) {
             displayStr = "0"
             fresh = true
         } else {
             displayStr = displayStr.dropLast(1)
+            if (displayStr == "-") {
+                displayStr = "0"
+                fresh = true
+            }
         }
         paint()
     }
