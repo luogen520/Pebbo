@@ -1,0 +1,2 @@
+-keep class com.luogen.pebbo.** { *; }
+-keepattributes *Annotation*
