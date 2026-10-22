@@ -2,6 +2,8 @@
 
 A small calculator for Android. Material 3, light + dark theme, one Activity, one layout. No ads, no analytics, no internet permission.
 
+[![Get it on Orion Store](https://raw.githubusercontent.com/RookieEnough/Orion-Store/refs/heads/main/assets/orion-badge.png)](https://rookieenough.github.io/Orion-Data/redirect.html?id=pebbo)
+
 ## Features
 
 - Four operations plus percent, sign toggle (±), backspace and clear
@@ -14,7 +16,7 @@ A small calculator for Android. Material 3, light + dark theme, one Activity, on
 
 ## Download
 
-Grab the latest signed APK from the [Releases](https://github.com/luogen520/Pebbo/releases) page.
+Grab the latest signed APK from the [Releases](https://github.com/luogen520/Pebbo/releases) page. Requires Android 5.0 (API 21) or later. Also available on Orion Store — search for "Pebbo".
 
 ## Build
 
