@@ -1,0 +1,1 @@
+Build modernization: AGP 8.7.3 / Kotlin 2.0.21, targetSdk 35, refreshed store assets. The calculator itself is unchanged.
